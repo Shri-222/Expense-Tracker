@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="icon" type="image/x-icon" href="./acetss/expenses.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="berserk">
+            <h1>Expense Tracker</h1>
+        <div class="contain">
+            <h3 class="yBal">Your Balance</h3>
+            <h3>$ <span id="tottalBalence">0.00</span></h3>
+            
+            <hr>
+
+            <div id="income"> 
+                IINCOME
+                <h3>+$ <span id="incomBalece">0.00</span></h3>
+            </div>
+
+            <div class="divider"></div>
+
+            <div id="expence">
+                EXPENSE
+                <h3>-$ <span id="expenceBalence">0.00</span></h3>
+            </div>
+            
+            <br><br>
+
+            <hr>
+
+            <h2>Transaction History</h2>
+            <div id="transactionHistory"></div>
+                
+            <br>
+            <hr>
+
+            <div>
+                <h2>Add new Transaction</h2>
+                <hr style="width: 50%; margin-left: 25%; margin-top: 0.7rem;">
+
+                <h4>Expense Type</h4>
+
+                <input type="text" id="inputText" placeholder="Type Somthing that Describe the Expence">
+
+                <h4>Amount <br> (negative - expense, positive - income)</h4>
+
+                <input type="number" id="inputValue" placeholder="Enter Amount">
+            </div>
+                <span class="btn">
+                    <button id="addTransaction" onclick="getAmount()">Add Transaction</button>
+                </span>
+
+        </div>
+
+    </div>
+
+    <script src="App.js"></script>
+</body>
+</html>

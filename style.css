@@ -1,0 +1,224 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+.berserk {
+    height: 120vh;
+    width: 100vw;
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* overflow: hidden; */
+}
+
+
+.contain {
+    /* height: 110vh; */
+    width: 50%;
+    margin: auto;
+    margin-top: 2.3rem;
+    text-align: center;
+    border: 2px solid black;
+}
+
+h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1.3rem;
+    margin-bottom: 1.2rem;
+}
+
+.yBal {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center
+}
+
+#income{
+    width: 48%;
+    min-height: 100px;
+    margin-top: 1.3rem;
+    float: left;
+    font-size: 1.3rem;
+    text-align: center;
+  
+}
+
+#expence {
+    width: 48%;
+    min-height: 100px;
+    margin-top: 1.3rem;
+    float: right;
+    font-size: 1.3rem;
+    text-align: center;
+
+}
+
+.divider {
+        margin-top: 1rem;
+        display: inline-block;
+        height: 6rem;
+       border: 3px solid steelblue ;
+}
+
+h2 {
+    font-size: 2rem;
+    color: slateblue;
+    margin-top: 1.2rem;
+    text-align: center;
+}
+
+#deletBar {
+    width: 25px;
+    height: 25px;
+    color: white;
+    border-radius: 50%;
+    background-color: #fa3015;
+    border: none;
+    border-bottom: 2px solid wheat;
+}
+
+#deletBar:hover {
+    border: 2px solid #e7e7e7;
+}
+
+#recordBar {
+    width: 70%;
+    height: 2.5rem;
+    color: #fff;
+    font-size: larger;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row-reverse;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 1.3rem;
+    padding: 5px 1.5rem 5px 14rem;
+    background-color: grey;
+    border:  2px solid rgb(53, 51, 51);
+    border-left: 5px solid #2ecc71;
+    box-shadow:  inset -20px -20px 60px #bfb8b8,
+                inset 30px 30px 60px #000000;
+}
+
+
+h4 {
+    font-size: larger;
+    margin-top: 1.3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+input {
+    width: 80%;
+    margin: 10px 13%;
+    text-align: center;
+    font-size: medium;
+    height: 2rem;
+    border: none;
+    /* border-bottom: 2px solid red; */
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #e8e8e8;
+    box-shadow: 
+            10px 10px 50px #c5c5c5,
+           -20px -20px 60px #ffffff;
+    transition: 0.3s;
+}
+
+.input:focus {
+    outline-color: #e8e8e8;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5,
+           inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+}
+
+#addTransaction {
+    margin:1.7rem 1.7rem;
+    background: #fff;
+    border: 2px solid black;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 170px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+  }
+  
+  .btn {
+    display: inline-block;
+    transform: skew(21deg);
+  }
+  
+  #addTransaction::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: rgb(20, 20, 20);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  
+  #addTransaction:hover {
+    color: #fff;
+  }
+  
+  #addTransaction:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+
+
+@media screen and (max-width : 1150px) {
+    .contain {
+        width: 80%;
+    }
+} 
+@media screen and (max-width : 450px ) {
+    .contain {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width : 280px) {
+    .contain {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 1150px) {
+    #recordBar {
+        padding-left: 30%;
+    }
+}
+
+@media screen and (max-width : 660px) {
+    #recordBar {
+        padding-left: 30%;
+    }
+}
+
+@media screen and (max-width : 460px) {
+    #recordBar {
+        padding-left: 20%;
+    }
+}
+
+
+
